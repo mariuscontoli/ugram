@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  mongo:
+    image: mongo:5.0.9
+    restart: "no"
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes:
+      - ugram_mongo:/data/db
+      - ./docker-entrypoint-initdb.d/mongo-mongo-init.js:/docker-entrypoint-initdb.d/mongo-mongo-init.js:ro
+
+volumes:
+  ugram_mongo:

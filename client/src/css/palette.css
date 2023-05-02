@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Insta";
+  src: url(../fonts/GrandHotel-Regular.woff);
+}
+
+.footer-tabs {
+  color: grey;
+}
+
+.title-ugram {
+  font-family: Insta, Helvetica, sans-serif;
+  color: black;
+}
+
+.profile-counter {
+  font-size: 1.5em;
+}
+
+.delete-picture {
+  color: #c10015;
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 10px;
+}
